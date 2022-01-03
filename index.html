@@ -14,9 +14,20 @@
 
 <body>
     <header class="cabecalho">
-        <button class="cabecalho__menu">menu</button>
+        <button class="cabecalho__menu" aria-label="Menu"><i></i></button> <!--aria-laber: da nome ao ícone adicionado-->
         <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="cabecalho__logo">
-        <button class="cabecalho__notificacao">notificação</button>
+        <button class="cabecalho__notificacao" aria-label="Cabeçalho"><i></i></button>
     </header>
+    
+    <!--criando o menu lateral-->
+    <nav class="menu-lateral"> 
+        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="menu-lateral__logo">
+        <a href="#" class="menu-lateral__link">Inicio</a>
+        <a href="#" class="menu-lateral__link">Vídeos</a>
+        <a href="#" class="menu-lateral__link">Picos</a>
+        <a href="#" class="menu-lateral__link">Integrantes</a>
+        <a href="#" class="menu-lateral__link">Camisas</a>
+        <a href="#" class="menu-lateral__link">Pinturas</a>
+    </nav>
 </body>
 </html>

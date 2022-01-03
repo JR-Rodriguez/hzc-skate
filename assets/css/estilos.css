@@ -1,9 +1,36 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
 body{
     background-color: #1D232A;
-    font-family: 'Open Sans' sans-serif;
+    font-family: 'Open Sans', 'icones', sans-serif;
     color: #FFFFFF;
 }
 
 .cabecalho{
     display: flex;
+    justify-content: space-between; /*centraliza os elementos centrais e coloca os elementos da ponta colados a borda*/
+    /*justify-content: mexe com os elementos na horizontal*/
+    align-items: center; /*mexe com elementos na vertical*/
+    background-color: #15191C;
+    padding: 8px 16px; /*cima baixa, esquerda direita*/
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16); /*inserindo sombra*/
+}
+/*adicionando os ícones no header*/
+.cabecalho__menu i::before{
+    content: "\e904";
+    font-size: 24px;
+}
+
+.cabecalho__notificacao i::before{
+    content: "\e906";
+    font-size: 24px;
+}
+
+/*estilizando o menu lateral*/
+.menu-lateral{
+    display: flex;
+    flex-direction: column;
 }
