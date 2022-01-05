@@ -24,6 +24,7 @@ body{
     max-width: 40px;
     max-height: 40px;
 }
+
 /*adicionando os ícones no header*/
 .cabecalho__menu i::before{
     content: "\e904";
