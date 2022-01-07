@@ -112,10 +112,17 @@ body{
 
 .principal{
     padding: 24px 16px;
+    display: grid;
+    gap: 16px;
 }
 
 .titulo-pagina{
     font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.titulo-secao{
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -126,10 +133,15 @@ body{
     background-color: #2C343A;
 }
 
+.cartao--destaque{
+    margin-bottom: 16px;
+}
+
 .cartao__conteudo{
     padding: 16px;
     display: grid; /*criando uma grid*/
-    grid-template-columns: 1fr 1fr; /*definindo as colunas de uma grid*/
+    grid-template-columns: auto 1fr; /*definindo as colunas de uma grid - auto= define o tamanho da coluna como automatico a partir do menor elemento*/
+    gap: 8px; /*espaçamento entre linhas da grid*/
 }
 
 .cartao__destaque{
@@ -173,7 +185,7 @@ body{
     height: 40px;
     border-radius: 10px;
     font-size: 0.9rem;
-    margin-top: 4px;
+    justify-self: flex-end;
 }
 
 .cartao__botao--play::before{
@@ -188,4 +200,9 @@ body{
 
 .cartao__botao--destaque::before{
     margin-right: 8px;
+}
+
+.secao{
+    display: grid;
+    gap: 16px;
 }
